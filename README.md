@@ -24,8 +24,6 @@ Capturas do framebuffer do aparelho, 640×480, durante o autodemo. Não são moc
 | <img src="screenshots/save-carregado.png" width="320"> | <img src="screenshots/teste-de-botoes.png" width="320"> |
 | Depois de sair e reabrir: os blocos continuam lá | Teste de botões do próprio jogo |
 
-[Clique de 18 quadros do autodemo](screenshots/clipe.mp4) (0,6 s entre quadros; não é tempo real).
-
 ## Controles (gamepad)
 
 | Entrada | Ação |
@@ -194,7 +192,6 @@ Capturas reais do framebuffer DRM (`drmcap.py`), todas com 1.228.800 bytes
 - [`pausa.png`](screenshots/pausa.png) — menu de pausa com os ajustes.
 - [`teste-de-botoes.png`](screenshots/teste-de-botoes.png) — overlay com modo, base e GUID do controle.
 - [`novo-mundo.png`](screenshots/novo-mundo.png) — mundo novo, spawn em clareira.
-- [`clipe.mp4`](screenshots/clipe.mp4) — 18 quadros reais durante o autodemo (0,6 s entre quadros; não é tempo real).
 
 Testes funcionais:
 
