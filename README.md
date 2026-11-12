@@ -9,6 +9,23 @@ Tudo que aparece na tela e no áudio é gerado por código: o atlas de texturas
 (128×32, 16×16 por tile) é pintado em Lua no `load` e os sons são sintetizados
 em `sfx.lua`. Nenhum asset, nome ou textura de outro jogo é usado.
 
+## Capturas (no R36S de verdade)
+
+Capturas do framebuffer do aparelho, 640×480, durante o autodemo. Não são mockups.
+
+|  |  |
+|---|---|
+| <img src="screenshots/titulo.png" width="320"> | <img src="screenshots/mundo-dia.png" width="320"> |
+| Tela de título | Mundo de dia, com a hotbar |
+| <img src="screenshots/por-do-sol.png" width="320"> | <img src="screenshots/noite.png" width="320"> |
+| Pôr do sol, com a lâmpada acesa | Noite: estrelas e luz da mão |
+| <img src="screenshots/novo-mundo.png" width="320"> | <img src="screenshots/pausa.png" width="320"> |
+| Mundo novo: spawn em clareira | Pausa com os ajustes |
+| <img src="screenshots/save-carregado.png" width="320"> | <img src="screenshots/teste-de-botoes.png" width="320"> |
+| Depois de sair e reabrir: os blocos continuam lá | Teste de botões do próprio jogo |
+
+[Clique de 18 quadros do autodemo](screenshots/clipe.mp4) (0,6 s entre quadros; não é tempo real).
+
 ## Controles (gamepad)
 
 | Entrada | Ação |
@@ -168,20 +185,16 @@ Comparações do mesmo dia, úteis para o histórico:
 ## Testes e provas
 
 Capturas reais do framebuffer DRM (`drmcap.py`), todas com 1.228.800 bytes
-(640×480×4) conferidos:
+(640×480×4) conferidos. As principais estão em [`screenshots/`](screenshots/):
 
-- `~/dev/r36s/r36s-diag/gravacoes/camadazero-provas/final-antes.png`
-- `.../final-stamp.png` — blocos carimbados pelo teste (tijolo, tábuas, lâmpada)
-- `.../final-recarga.png` — mesma cena depois de sair e reabrir: save/load
-- `.../final-por-do-sol.png` e `.../final-noite.png` — céu e luz
-- `.../final-pausa-q1.png` (START) e `final-pausa-q2.png` (voltou)
-- `.../teste-botoes.png` — overlay do menu de pausa com modo/base/guid
-- `.../camadazero-clipe.mp4` — 18 quadros reais durante o autodemo (não é
-  tempo real; 0,6 s entre quadros)
-- `.../final-novo-mundo.png` — primeiro mundo novo, spawn em clareira
-- `.../final-scale50-jogo.png` — resolução 3D em 50% (canvas 320×240)
-- `.../primeira-no-aparelho.png`, `save-*.png`, `ceu-*.png`, `atalho-*.png`,
-  `pausa-*.png` — iterações anteriores, mantidas como histórico
+- [`titulo.png`](screenshots/titulo.png) — tela de título.
+- [`mundo-dia.png`](screenshots/mundo-dia.png) — mundo de dia, com a hotbar.
+- [`por-do-sol.png`](screenshots/por-do-sol.png) e [`noite.png`](screenshots/noite.png) — céu, estrelas e luz da mão.
+- [`save-carregado.png`](screenshots/save-carregado.png) — mesma cena depois de sair e reabrir: save/load.
+- [`pausa.png`](screenshots/pausa.png) — menu de pausa com os ajustes.
+- [`teste-de-botoes.png`](screenshots/teste-de-botoes.png) — overlay com modo, base e GUID do controle.
+- [`novo-mundo.png`](screenshots/novo-mundo.png) — mundo novo, spawn em clareira.
+- [`clipe.mp4`](screenshots/clipe.mp4) — 18 quadros reais durante o autodemo (0,6 s entre quadros; não é tempo real).
 
 Testes funcionais:
 
